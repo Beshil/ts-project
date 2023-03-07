@@ -1,8 +1,8 @@
-import { Suspense } from "react";
-import { useTranslation } from "react-i18next";
-import { Route, Routes } from "react-router-dom";
-import { routeConfig } from "shared/congif/routeConfig/routeConfig";
-import { PageLoader } from "widgets/PageLoader";
+import { Suspense } from 'react';
+import { useTranslation } from 'react-i18next';
+import { Route, Routes } from 'react-router-dom';
+import { routeConfig } from 'shared/congif/routeConfig/routeConfig';
+import { PageLoader } from 'widgets/PageLoader';
 
 const AppRouter = () => {
   const { t } = useTranslation();
