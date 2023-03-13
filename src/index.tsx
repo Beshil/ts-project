@@ -5,6 +5,8 @@ import App from './app/App';
 import { ThemeProvider } from './app/providers/ThemeProvider';
 import './shared/congif/i18n/i18n';
 
+import 'app/styles/index.scss';
+
 render(
   <BrowserRouter>
     <ErrorBoundary>
