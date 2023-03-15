@@ -18,7 +18,7 @@ export const Navbar = ({ className }: NavbarProps) => {
   }, []);
 
   return (
-    <div className={classNames(cls.Navbar, {}, [className])}>
+    <div className={classNames(cls.navbar, {}, [className])}>
       <Button
         theme={ThemeButton.CLEAR_INVERTED}
         className={cls.links}
