@@ -7,8 +7,8 @@ import React, {
   useState,
 } from 'react';
 import { Portal } from 'shared/ui/Portal/Portal';
-import cls from './Modal.module.scss';
 import { useTheme } from 'app/providers/ThemeProvider';
+import cls from './Modal.module.scss';
 
 interface ModalProps {
   className?: string;
@@ -21,7 +21,9 @@ interface ModalProps {
 const ANIMATION_DELAY = 300;
 
 export const Modal = (props: ModalProps) => {
-  const { className, children, isOpen, onClose, lazy } = props;
+  const {
+    className, children, isOpen, onClose, lazy,
+  } = props;
 
   const [isMounted, setIsMounted] = useState(false);
   const [isClosing, setIsClosing] = useState(false);
@@ -49,7 +51,7 @@ export const Modal = (props: ModalProps) => {
         closeHandler();
       }
     },
-    [closeHandler]
+    [closeHandler],
   );
 
   const onContentClick = (e: React.MouseEvent) => {
